@@ -10,3 +10,5 @@ Elasti cache is used instead of memcache.
 Active MQ replaces Rabbit MQ.
 Route 53 is used for the DNS.
 CloudFront for the Contend Delivery Network.
+
+Since RDS is in private VPC, create EC2 instance in same VPC to access RDS and run queries.
