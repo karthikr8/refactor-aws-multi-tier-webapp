@@ -12,3 +12,5 @@ Route 53 is used for the DNS.
 CloudFront for the Contend Delivery Network.
 
 Since RDS is in private VPC, create EC2 instance in same VPC to access RDS and run queries.
+
+In the temp EC2, Install mysql-client and use RDS end point, credentials to access the database.
