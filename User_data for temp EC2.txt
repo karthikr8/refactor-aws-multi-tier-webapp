@@ -1,0 +1,11 @@
+#!/bin/bash
+
+apt update && apt install mysql-client -y
+mysql -h (RDS end point) \
+-u (user name) \
+-p(password) -e"exit"
+git clone https://github.com/hkhcoder/vprofile-project.git
+cd vprofile-project
+mysql -h (RDS end point) \
+-u (user name) \
+-p(password) accounts < src/main/resources/db_backup.sql
